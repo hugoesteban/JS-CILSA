@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <script src="M3-Ejercicio1.js"></script>
+      <h3>¿Eres argentino?</h3>
+      <input
+        type="radio"
+        name="nacionalidad"
+        value="Sí"
+        onclick="informarRadioButton()"
+      />Sí<br />
+      <input
+        type="radio"
+        name="nacionalidad"
+        value="No"
+        onclick="informarRadioButton()"
+      />No <br />
+    </div>
+    <div>
+      <h3>Ingresa dos números y presiona el botón para saber cuál es mayor</h3>
+      Número 1:
+      <input type="text" name="numero1" id="numero1" value="0" /><br />
+      Número 2:
+      <input type="text" name="numero2" id="numero2" value="0" /><br /><br />
+      <input
+        type="button"
+        name="botonCompara"
+        value="Compara"
+        onclick="comparaValores()"
+      />
+    </div>
+    <div>
+      <h3>Ingresa dos números para sumar</h3>
+      Número 1:
+      <input type="text" name="numero3" id="numero3" value="0" /><br />
+      Número 2:
+      <input type="text" name="numero4" id="numero4" value="0" /><br /><br />
+      <input
+        type="button"
+        name="botonSuma"
+        value="Suma"
+        onclick="sumaValores()"
+      />
+    </div>
+  </body>
+</html>
