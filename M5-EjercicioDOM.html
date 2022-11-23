@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio DOM</title>
+    <!-- estilo para ocultar la informacion del ultimo parrafo -->
+    <style type="text/css">
+      .oculto {
+        display: none;
+      }
+      .visible {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="infopag"
+      style="border: thin solid rgb(29, 13, 117); padding: 2px"
+    ></div>
+    <h3>Centros de Formación CILSA</h3>
+    <p>
+      Son centros tecnológicos comunitarios que tienen por objetivos promover el
+      acceso y la capacitación en el uso de las Tecnologías de la Información y
+      la Comunicación, y la pr eparación para la inclusión laboral de
+      poblaciones en situación de vulnerabilidad social.
+      <a href="https://www.cilsa.org">(Visita la Pagina de CILSA)</a> Se
+      encuentran en las ciuda des de Santa Fe, Rosario, Córdoba, Mar del Plata,
+      La Plata, Mendoza y CABA.
+    </p>
+    <h3>
+      Si quiere anotarse para los proximos cursos, presione "Añadir su Nombre"
+    </h3>
+    <ul id="alumnos">
+      <li>Jesus Chirinos</li>
+      <li>Monica Figueredo</li>
+      <li>Florencia Campagna</li>
+      <li>Daniela Vallejos</li>
+      <li>Facundo Morales</li>
+    </ul>
+
+    <input type="button" value="Añadir su Nombre" onclick="agrega();" />
+    <hr color="blue" size="3" />
+    <h3>Conoce un poco mas sobre nosotros</h3>
+    <p id="texto">
+      CILSA es una Organización No Gubernamental (O.N.G.) de bien público
+      fundada el 14 de mayo de 1966 en la ciudad de Santa Fe, República
+      Argentina.
+      <span id="adicional" class="oculto"
+        >Tiene como MISION: Promover la inclusión plena de personas con
+        discapacidad y personas provenientes de sectores marginados de la
+        sociedad como niños, niñas y adolescentes en situación de vulnerabilidad
+        social.
+      </span>
+    </p>
+    <a id="enlace" href="#" onclick="muestra(); return false;"
+      >Seguir leyendo</a
+    >
+    <script>
+      window.onload = function () {
+        var info = document.getElementById("infopag");
+        var enlaces = document.getElementsByTagName("a");
+        // Mensaje de bienvenida mas nombre ingresado (Pista usar ,innerHTML)
+        // Numero de enlaces que tiene la pagina (Pista usar ,innerHTML)
+      };
+    </script>
+    <script src="M5-EjercicioDOM.js"></script>
+  </body>
+</html>
